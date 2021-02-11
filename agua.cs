@@ -108,34 +108,44 @@ public class agua : MonoBehaviour
     }
     void Flores()
     {
-        Vector3 vc1=new Vector3(-0.227f, 0.032f, -6.457f);
-        Vector3 vc2=new Vector3(-0.179f, 0.032f, -6.457f);
+        float xPetalo1=-0.227f;
+        float xPetalo2=-0.179f;
+        float xPetalo3=-0.124f;
+        float yPetalo=0.032f;
+        float zPetalo=-6.457f;
+        float xt=0.2f;
+        float yt1y3=0.03f;
+        float yt2=0.02f;
+        float zt=0.1f;
         Color c1=flor1;
-        Vector3 vc3=new Vector3(-0.124f, 0.032f, -6.457f);
-        Vector3 vc4=new Vector3(0.2f ,0.03f,0.1f);
-        Vector3 vc5=new Vector3(0.2f ,0.02f,0.1f);
-        Vector3 vc6=new Vector3(0.2f ,0.03f,0.1f);
         Color c2=flor2;
+        float diferenciax1yx2=xPetalo1-xPetalo2;
+        float diferenciax1yx3=xPetalo1-xPetalo3;
+
+
+        Vector3 vc1=new Vector3(xPetalo1, yPetalo, zPetalo);
+        Vector3 vc2=new Vector3(xPetalo2, yPetalo, zPetalo);
+        Vector3 vc3=new Vector3(xPetalo3, yPetalo, zPetalo);
+        Vector3 vc4=new Vector3(xt ,yt1y3,zt);
+        Vector3 vc5=new Vector3(xt ,yt2,zt);
+        Vector3 vc6=new Vector3(xt ,yt1y3,zt);
         Flor(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
 
-        vc1=new Vector3(3.345f, 0.032f, -6.453f);
-        vc2=new Vector3(3.402f, 0.032f, -6.457f);
-        c1=flor1;
-        vc3=new Vector3(3.442f, 0.032f, -6.457f);
-        vc4=new Vector3(0.2f ,0.03f,0.1f);
-        vc5=new Vector3(0.2f ,0.02f,0.2f);
-        vc6=new Vector3(0.2f ,0.03f,0.1f);
-        c2=flor2;
+        xPetalo1=3.345f;
+        xPetalo2=xPetalo1+diferenciax1yx2;
+        xPetalo3=xPetalo1+diferenciax1yx3;
+        vc1=new Vector3(xPetalo1, yPetalo, zPetalo);
+        vc2=new Vector3(xPetalo2, yPetalo, zPetalo);
+        vc3=new Vector3(xPetalo3, yPetalo, zPetalo);
         Flor(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
 
-        vc1=new Vector3(-1.817f, 0.032f, -7.241f);
-        vc2=new Vector3(-1.765f, 0.032f, -7.234f);
-        c1=flor1;
-        vc3=new Vector3(-1.71f, 0.032f, -7.234f);
-        vc4=new Vector3(0.2f ,0.03f,0.1f);
-        vc5=new Vector3(0.2f ,0.02f,0.2f);
-        vc6=new Vector3(0.2f ,0.03f,0.1f);
-        c2=flor2;
+        xPetalo1=-1.817f;
+        xPetalo2=xPetalo1+diferenciax1yx2;
+        xPetalo3=xPetalo1+diferenciax1yx3;
+        zPetalo=-7.241f;
+        vc1=new Vector3(xPetalo1, yPetalo, zPetalo);
+        vc2=new Vector3(xPetalo2, yPetalo, zPetalo);
+        vc3=new Vector3(xPetalo3, yPetalo, zPetalo);
         Flor(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
 
     }

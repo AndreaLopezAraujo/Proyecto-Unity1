@@ -42,44 +42,76 @@ public class Tierra : MonoBehaviour
     }
     void Arbustos()
     {
-        Vector3 vc1=new Vector3(6.539f, 0.471f, -2.667f);
-        Vector3 vc2=new Vector3(6.909f, 0.471f, -2.688f);
+        float x1=6.539f;
+        float x2=6.909f;
+        float x3=7.27f;
+        float y=0.471f;
+        float z1y3=-2.667f;
+        float z2=-2.688f;
+        float xt1y3=1f;
+        float xt2=0.8f;
+        float yt=0.2f;
+        float zt1y3=0.5f;
+        float zt2=0.8f;
+        float x1yx2=diferencia(x2,x1);
+        float x1yx3=diferencia(x3,x1);
+        float z1yz2=diferencia(z2,z1y3);
         Color c1=verdeMedio;
-        Vector3 vc3=new Vector3(7.27f, 0.471f, -2.667f);
-        Vector3 vc4=new Vector3(1f ,0.2f,0.5f);
-        Vector3 vc5=new Vector3(0.8f ,0.2f,0.8f);
-        Vector3 vc6=new Vector3(1f ,0.2f,0.5f);
         Color c2=verdeOscuro;
+        Vector3 vc1=new Vector3(x1, y, z1y3);
+        Vector3 vc2=new Vector3(x2, y, z2);
+        Vector3 vc3=new Vector3(x3, y, z1y3);
+        Vector3 vc4=new Vector3(xt1y3 ,yt,zt1y3);
+        Vector3 vc5=new Vector3(xt2 ,yt,zt2);
+        Vector3 vc6=new Vector3(xt1y3 ,yt,zt1y3);
+        Arbusto(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
+        
+        x1=1.348f;
+        x2=x1+x1yx2;
+        x3=x1+x1yx3;
+        y=0.471f;
+        z1y3=-2.307f;
+        z2=z1y3+z1yz2;
+        c1=verdeMedio;
+        c2=verdeOscuro;
+        vc1=new Vector3(x1, y, z1y3);
+        vc2=new Vector3(x2, y, z2);
+        vc3=new Vector3(x3, y, z1y3);
+        vc4=new Vector3(xt1y3 ,yt,zt1y3);
+        vc5=new Vector3(xt2 ,yt,zt2);
+        vc6=new Vector3(xt1y3 ,yt,zt1y3);
         Arbusto(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
 
-        vc1=new Vector3(1.348f, 0.471f, -2.307f);
-        vc2=new Vector3(1.75f, 0.471f, -2.341f);
+        x1=-8.731f;
+        x2=x1+x1yx2;
+        x3=x1+x1yx3;
+        y=0.471f;
+        z1y3=-2.307f;
+        z2=z1y3+z1yz2;
         c1=verdeMedio;
-        vc3=new Vector3(2.153f, 0.471f, -2.318f);
-        vc4=new Vector3(1f ,0.2f,0.5f);
-        vc5=new Vector3(0.8f ,0.2f,0.8f);
-        vc6=new Vector3(1f ,0.2f,0.5f);
         c2=verdeOscuro;
+        vc1=new Vector3(x1, y, z1y3);
+        vc2=new Vector3(x2, y, z2);
+        vc3=new Vector3(x3, y, z1y3);
+        vc4=new Vector3(xt1y3 ,yt,zt1y3);
+        vc5=new Vector3(xt2 ,yt,zt2);
+        vc6=new Vector3(xt1y3 ,yt,zt1y3);
         Arbusto(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
 
-        vc1=new Vector3(-8.731f, 0.471f, -2.307f);
-        vc2=new Vector3(-8.356f, 0.471f, -2.341f);
+        x1=-3.56f;
+        x2=x1+x1yx2;
+        x3=x1+x1yx3;
+        y=0.471f;
+        z1y3=-4.105f;
+        z2=z1y3+z1yz2;
         c1=verdeMedio;
-        vc3=new Vector3(-7.944f, 0.471f, -2.318f);
-        vc4=new Vector3(1f ,0.2f,0.5f);
-        vc5=new Vector3(0.8f ,0.2f,0.8f);
-        vc6=new Vector3(1f ,0.2f,0.5f);
         c2=verdeOscuro;
-        Arbusto(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
-
-        vc1=new Vector3(-3.74f, 0.471f, -4.105f);
-        vc2=new Vector3(-3.36f, 0.471f, -4.078f);
-        c1=verdeMedio;
-        vc3=new Vector3(-2.93f, 0.471f, -4.145f);
-        vc4=new Vector3(1f ,0.2f,0.5f);
-        vc5=new Vector3(0.8f ,0.2f,0.8f);
-        vc6=new Vector3(1f ,0.2f,0.5f);
-        c2=verdeOscuro;
+        vc1=new Vector3(x1, y, z1y3);
+        vc2=new Vector3(x2, y, z2);
+        vc3=new Vector3(x3, y, z1y3);
+        vc4=new Vector3(xt1y3 ,yt,zt1y3);
+        vc5=new Vector3(xt2 ,yt,zt2);
+        vc6=new Vector3(xt1y3 ,yt,zt1y3);
         Arbusto(vc1,vc2,vc3,vc4,vc5,vc6,c1,c2);
     }
     void Arbusto(Vector3 vc1,Vector3 vc2, Vector3 vc3,Vector3 vc4,Vector3 vc5,Vector3 vc6, Color c1, Color c2)
@@ -107,52 +139,77 @@ public class Tierra : MonoBehaviour
     }
     void Ongos()
     {
-        Vector3 vc1=new Vector3(-3.443f, 0.471f, -4.429f);
-        Vector3 vc3=new Vector3(0.1f ,0.1f,0.1f);
+        float x1=-3.443f;
+        float x2=-3.436f;
+        float y1=0.471f;
+        float y2=0.631f;
+        float z1=-4.429f;
+        float z2=-4.422f;
+        float xt1=0.1f;
+        float xt2=0.15f;
+        float yt1=0.1f;
+        float yt2=0.05f;
+        float zt1=0.1f;
+        float zt2=0.25f;
+        float x1yx2=diferencia(x1,x2);
+        float y1y2=diferencia(y2,y1);
+        float z1yz2=diferencia(z1,z2);
         Color c1=base1;
-        Vector3 vc2=new Vector3(-3.436f, 0.631f, -4.422f);
-        Vector3 vc4=new Vector3(0.15f ,0.05f,0.25f);
         Color c2=detalle2;
+        Vector3 vc1=new Vector3(x1, y1, z1);
+        Vector3 vc3=new Vector3(xt1 ,yt1,zt1);
+        Vector3 vc2=new Vector3(x2, y2, z2);
+        Vector3 vc4=new Vector3(xt2 ,yt2,zt2);
         Ongo(vc1,vc2,vc3,vc4,c1,c2);
 
-        vc1=new Vector3(-3.16f, 0.504f, -4.429f);
-        vc3=new Vector3(0.1f ,0.1f,0.1f);
-        c1=base1;
-        vc2=new Vector3(-3.162f, 0.669f, -4.422f);
-        vc4=new Vector3(0.15f ,0.05f,0.25f);
-        c2=detalle2;
+        x1=-3.16f;
+        x2=x1+x1yx2;
+        y1=0.504f;
+        y2=y1+y1y2;
+        z1=-4.429f;
+        z2=z1+z1yz2;
+        vc1=new Vector3(x1, y1, z1);
+        vc2=new Vector3(x2, y2, z2);
         Ongo(vc1,vc2,vc3,vc4,c1,c2);
 
-        vc1=new Vector3(-5.346f, 0.471f, -3.278f);
-        vc3=new Vector3(0.1f ,0.1f,0.1f);
-        c1=base1;
-        vc2=new Vector3(-5.341f, 0.631f, -3.279f);
-        vc4=new Vector3(0.15f ,0.05f,0.25f);
-        c2=detalle2;
+        x1=-5.346f;
+        x2=x1+x1yx2;
+        y1=0.471f;
+        y2=y1+y1y2;
+        z1=-3.278f;
+        z2=z1+z1yz2;
+        vc1=new Vector3(x1, y1, z1);
+        vc2=new Vector3(x2, y2, z2);
         Ongo(vc1,vc2,vc3,vc4,c1,c2);
 
-        vc1=new Vector3(0.255f, 0.471f, -3.278f);
-        vc3=new Vector3(0.1f ,0.1f,0.1f);
-        c1=base1;
-        vc2=new Vector3(0.26f, 0.631f, -3.3f);
-        vc4=new Vector3(0.15f ,0.05f,0.25f);
-        c2=detalle2;
+        x1=0.97f;
+        x2=x1+x1yx2;
+        y1=0.471f;
+        y2=y1+y1y2;
+        z1=-3.278f;
+        z2=z1+z1yz2;
+        vc1=new Vector3(x1, y1, z1);
+        vc2=new Vector3(x2, y2, z2);
+        Ongo(vc1,vc2,vc3,vc4,c1,c2);
+        
+        x1=7.05f;
+        x2=x1+x1yx2;
+        y1=0.471f;
+        y2=y1+y1y2;
+        z1=-3.36f;
+        z2=z1+z1yz2;
+        vc1=new Vector3(x1, y1, z1);
+        vc2=new Vector3(x2, y2, z2);
         Ongo(vc1,vc2,vc3,vc4,c1,c2);
 
-        vc1=new Vector3(7.05f, 0.471f, -3.36f);
-        vc3=new Vector3(0.1f ,0.1f,0.1f);
-        c1=base1;
-        vc2=new Vector3(7.037f, 0.631f, -3.356f);
-        vc4=new Vector3(0.15f ,0.05f,0.25f);
-        c2=detalle2;
-        Ongo(vc1,vc2,vc3,vc4,c1,c2);
-
-        vc1=new Vector3(6.888f, 0.471f, -3.177f);
-        vc3=new Vector3(0.1f ,0.1f,0.1f);
-        c1=base1;
-        vc2=new Vector3(6.901f, 0.631f, -3.184f);
-        vc4=new Vector3(0.15f ,0.05f,0.25f);
-        c2=detalle2;
+        x1=6.888f;
+        x2=x1+x1yx2;
+        y1=0.471f;
+        y2=y1+y1y2;
+        z1=-3.177f;
+        z2=z1+z1yz2;
+        vc1=new Vector3(x1, y1, z1);
+        vc2=new Vector3(x2, y2, z2);
         Ongo(vc1,vc2,vc3,vc4,c1,c2);
     }
     void Ongo(Vector3 vc1,Vector3 vc2, Vector3 vc3,Vector3 vc4, Color c1, Color c2)
@@ -171,10 +228,8 @@ public class Tierra : MonoBehaviour
         var cylinderRenderer0 =   cylinder0.GetComponent<Renderer>();
         cylinderRenderer0.material.SetColor("_Color", c2);
     }
-
-    // Update is called once per frame
-    void Update()
+    float diferencia( float v1, float v2)
     {
-        
+        return v1-v2;
     }
 }

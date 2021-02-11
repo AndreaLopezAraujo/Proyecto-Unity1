@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,10 +18,13 @@ public class Osos : MonoBehaviour
     }
     void Cuerpo()
     {
-        Vector3 vc1=new Vector3(-0.77f, 1.03f, -4.31f);
+        float xbaseC=-0.77f;
+        float ybaseC=1.03f;
+        float zbaseC=-4.31f;
+        Vector3 vc1=new Vector3(xbaseC, 1.03f, zbaseC);
         Vector3 vc3=new Vector3(1f ,0.2f,1f);
         Color c1=base1;
-        Vector3 vc2=new Vector3(-0.77f, 1.17f, -4.313f);
+        Vector3 vc2=new Vector3(xbaseC, 1.17f, zbaseC);
         Vector3 vc4=new Vector3(0.7f ,0.2f,0.7f);
         Color c2=detalle1;
         BaseCuerpo(vc1,vc2,vc3,vc4,c1,c2);
@@ -193,5 +196,14 @@ public class Osos : MonoBehaviour
     void Update()
     {
         
+    }
+    float diferencia( float v1, float v2)
+    {
+        return v1-v2;
+    }
+
+    float diferenciaEscala( float v1, float v2)
+    {
+        return v2/v1;
     }
 }
